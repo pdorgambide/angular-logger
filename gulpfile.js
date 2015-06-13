@@ -4,7 +4,6 @@ var del = require('del');
 var uglify = require('gulp-uglify');
 var jasmine = require('gulp-jasmine');
 var cover = require('gulp-coverage');
-var coveralls = require('gulp-coveralls');
 var lazypipe = require('lazypipe');
 
 gulp.task('clean', function() {
@@ -31,13 +30,6 @@ gulp.task('test', ['build'], function () {
         .pipe(testAndGather())
         .pipe(cover.format(['html']))
         .pipe(gulp.dest('reports'));
-});
-
-gulp.task('travis', ['build'], function () {
-    gulp.src('spec/**/*spec.js')
-        .pipe(testAndGather())
-        .pipe(cover.format(['lcov']))
-        .pipe(coveralls());
 });
 
 gulp.task('default', ['build'], function() {
