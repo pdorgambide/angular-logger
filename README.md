@@ -1,6 +1,10 @@
-[![MIT License][license-image]][license-url] [![Build Status][travis-image]][travis-url] [![Code Climate][codeclimate-gpa-image]][codeclimate-url] [![Codacy Badge][codacy-shields-image]][codacy-url] [![Coverage Status][coveralls-image]][coveralls-url]
+_This project is no longer maintained. It is now included and superseded by: **[better-js-logging/angular-logger](https://github.com/better-js-logging/angular-logger)**._
 
-#angular-logger
+_Your current "angular-logger" bower dependency will keep working and is still the correct one._
+
+---
+
+# ~~Angular Logger~~
 
 ```javascript
 logEnhancerProvider.prefixPattern = '%s::[%s]>';
